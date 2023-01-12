@@ -30,8 +30,8 @@ if search_meal == 'yes':
     except TypeError:
         print('There are no meals under that category')
     # print(meal)
+    meal_choice = random.choice(meal_list)
+    print(f'You should try {meal_choice}!')
 else:
     print("Ok! See ya!")
 
-meal_choice = random.choice(meal_list)
-print(f'You should try {meal_choice}!')
